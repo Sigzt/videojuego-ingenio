@@ -1,2 +1,2 @@
 # videojuego-ingenio
-intento de crear un motor parecido al del DOOM pero sin idea de programación
+Intento de crear un motor parecido al del DOOM desde cero en python/C
