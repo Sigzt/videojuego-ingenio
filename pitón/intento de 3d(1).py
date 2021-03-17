@@ -1,6 +1,6 @@
 from graphics import *
 import math  
-mapa = [Point(30,200),Point(560,10),]   #importar del creador de mapas puntos extra: Point(420,570),Point(69,420),Point(30,50) 
+mapa = [Point(30,50),Point(420,10),Point(500,200),Point(560,290)]   #importar del creador de mapas puntos extra: Point(420,570),Point(69,420),Point(30,50) 
 x0 = 300.0
 y0 = 300.0
 camara = Point(0,300)
@@ -24,8 +24,8 @@ def perspectiva(t):
         d = Point(dx,dy)
         p2 = math.sqrt(d2x2 + d2y2) #Pitágoras
         d2 = Point(d2x,d2y)
-        alfa = abs(math.atan(dy/dx))
-        beta = abs(math.atan(d2y/d2x))
+        alfa = abs(math.atan(300/p))
+        beta = abs(math.atan(300/p2))
         h = math.tan(alfa)/(math.tan(fovy))
         h2 = math.tan(beta)/(math.tan(fovy))
         a = camara.y + 300*h
