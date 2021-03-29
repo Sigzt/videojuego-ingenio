@@ -53,8 +53,8 @@ def perspectiva(mapa):
             # desplazamiento de x respecto al foco
         px = 110*(mapa[i].x/mapa[i].y)
         px2 = 110*(mapa[i+1].x/mapa[i+1].y)
-        py = 110 * (100/mapa[i].y)
-        py2 = 110 * (100/mapa[i+1].y)  # cálculo de la altura
+        py = 110*(100/mapa[i].y)
+        py2 = 110*(100/mapa[i+1].y)  # cálculo de la altura
         #if mapa[i].y < 0  or mapa[i].y < 0:
         #    g = None
 
